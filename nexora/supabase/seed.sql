@@ -1,0 +1,4 @@
+-- Bootstrap the FIRST super admin manually (run in the SQL editor AFTER that user has registered).
+-- Roles can never be self-assigned through the API.
+-- insert into public.user_roles (user_id, role_code)
+-- select id, 'SUPER_ADMIN' from auth.users where email = 'YOUR_EMAIL_HERE';
